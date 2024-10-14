@@ -6,6 +6,10 @@
   "license": "MIT",
   "version": "0.0.1",
   "icon": "imgs/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/woshidashuaibi-lsj/Cbg-rem-px2.git"
+  },
   "engines": {
     "vscode": "^1.94.0"
   },
