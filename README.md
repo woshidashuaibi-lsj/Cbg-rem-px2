@@ -1,8 +1,13 @@
-### 本地调试
- npm i 之后直接 f5 打开对应扩展开发
- 建一个mvvm文件，只有在mvvm目录下才生效
+ 只有在mvvm目录下才生效
  vscode 版本 "^1.94.0" 以上
 
- 快捷键生效 shift+cmd+p 
+ ### 自动补全：
+ ![code](https://github.com/woshidashuaibi-lsj/resources/blob/main/4c0bca91eb99396717bb96f4a69e5655.gif)
+ 
+
+
+ ### 页面快捷键全体css样式转换： shift+cmd+p 
+ ![code](https://github.com/woshidashuaibi-lsj/resources/blob/main/7fd51fc832a085b95024cebc158cf4d9.gif)
+
  生效文件名后缀  ["vue", "less", "scss", "sass", "stylus", "styl"]
  

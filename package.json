@@ -1,14 +1,14 @@
 {
-  "name": "cbg-rem-px2",
-  "displayName": "cbg-rem-px2",
+  "name": "lsj-rem-px2",
+  "displayName": "lsj-rem-px2",
   "description": "快捷化处理样式",
   "publisher": "lusuijie",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "icon": "imgs/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/woshidashuaibi-lsj/Cbg-rem-px2.git"
+    "url": "https://github.com/woshidashuaibi-lsj/lsj-rem-px2.git"
   },
   "engines": {
     "vscode": "^1.94.0"
@@ -19,7 +19,7 @@
     "Other"
   ],
   "keywords": [
-    "px-px2fun"
+    "lsj-rem-px2"
   ],
   "activationEvents": [
     "onLanguage:vue",
@@ -29,31 +29,26 @@
     "onLanguage:stylus",
     "onLanguage:styl"
   ],
-  "main": "./src/extension.js",
+  "main": "./dist/extensions.js",
   "contributes": {
     "keybindings": [
       {
-        "command": "cbg-rem-px2.p2r",
+        "command": "lsj-rem-px2.p2r",
         "key": "ctrl+alt+p",
-        "mac": "shift+cmd+p"
-      }
-    ],
-    "commands": [
-      {
-        "command": "cbg-rem-px2.helloWorld",
-        "title": "Hello World"
+        "mac": "shift+cmd+p",
+        "title": "快捷键格式化 css"
       }
     ],
     "configuration": {
       "type": "object",
-      "title": "cbg-rem-px2 配置",
+      "title": "lsj-rem-px2 配置",
       "properties": {
-        "cbg-rem-px2.p2rFunName": {
+        "lsj-rem-px2.p2rFunName": {
           "type": "string",
           "default": "rem",
-          "description": "设置p2r为其他函数名"
+          "description": "将px转换成rem()的形式"
         },
-        "cbg-rem-px2.p2rMinPx": {
+        "lsj-rem-px2.p2rMinPx": {
           "type": "number",
           "default": 0,
           "description": "px转换的最小值，大于该值才会提示或全局转化"

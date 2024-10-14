@@ -47,9 +47,9 @@ function activate(context) {
 
 	// 使用命令的批量处理
 	context.subscriptions.push(
-		// VSCode API注册文本编辑器命令"cbg-rem-px2.p2r"
+		// VSCode API注册文本编辑器命令"lsj-rem-px2.p2r"
 		vscode.commands.registerTextEditorCommand(
-			"cbg-rem-px2.p2r",
+			"lsj-rem-px2.p2r",
 			(textEditor) => {
 				// document（当前编辑的文档）,selection（当前选中的文本区域）
 				let { document, selection } = textEditor;
