@@ -1,0 +1,79 @@
+{
+  "name": "cbg-rem-px2",
+  "displayName": "cbg-rem-px2",
+  "description": "快捷化处理样式",
+  "publisher": "lusuijie",
+  "license": "MIT",
+  "version": "0.0.1",
+  "icon": "imgs/icon.png",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Formatters",
+    "Snippets",
+    "Other"
+  ],
+  "keywords": [
+    "px-px2fun"
+  ],
+  "activationEvents": [
+    "onLanguage:vue",
+    "onLanguage:less",
+    "onLanguage:scss",
+    "onLanguage:sass",
+    "onLanguage:stylus",
+    "onLanguage:styl"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "keybindings": [
+      {
+        "command": "cbg-rem-px2.p2r",
+        "key": "ctrl+alt+p",
+        "mac": "shift+cmd+p"
+      }
+    ],
+    "commands": [
+      {
+        "command": "cbg-rem-px2.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "cbg-rem-px2 配置",
+      "properties": {
+        "cbg-rem-px2.p2rFunName": {
+          "type": "string",
+          "default": "rem",
+          "description": "设置p2r为其他函数名"
+        },
+        "cbg-rem-px2.p2rMinPx": {
+          "type": "number",
+          "default": 0,
+          "description": "px转换的最小值，大于该值才会提示或全局转化"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "webpack",
+    "prepublish": "npm run build && vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.94.0",
+    "@types/mocha": "^10.0.8",
+    "@types/node": "20.x",
+    "eslint": "^9.11.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "color": "^4.2.3",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "standard-version": "^9.5.0",
+    "vsce": "^2.15.0"
+  }
+}
